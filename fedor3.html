@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+     
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none; 
+  margin: 40px 0 5px; 
+  padding: 25px 0 5px; 
+  text-align: center; 
+  background: white; 
+}
+* {
+    box-sizing:border-box;
+   } 
+
+   .left {
+    background-color:#2196F3;
+    padding:20px;
+    float:left;
+    width:20%;
+   }
+
+   .main {
+    background-color:#f1f1f1;
+    padding:20px;
+    float:left;
+    width:60%; 
+   }
+
+ .right {
+    background-color:#4CAF50;
+    padding:20px;
+    float:left;
+    width:20%;
+   }
+
+  
+   @media screen and (max-width:800px) {
+    .left, .main, .right {
+     width:100%;
+   }
+  }
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block; 
+  vertical-align:top; 
+}
+.menu-main li:last-child:after {content: none;} 
+.menu-main a { 
+  text-decoration: none; 
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px; 
+  position: relative; 
+  padding-bottom: 20px; 
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s; 
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;} 
+
+
+.menu-main a:before,
+.menu-main a:after {
+  content: ""; 
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #86feae;
+  transition: .8s; 
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;} 
+
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;} 
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+.column img {
+    opacity: 1; 
+    cursor: pointer; 
+}
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+
+.container {
+    position: relative;
+    display: none;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color:red;
+    font-size: 35px;
+    cursor: pointer;
+}
+.button_for_change_color {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-color: aliceblue;
+  color: blue;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+    <ul class="menu-main">
+      <li><a href="fedor.html">Главная</a></li>
+      <li><a href="fedor2.html">О тг ботах</a></li>
+      <li><a href="fedor3.html">Мы в телеграмме</a></li>
+      </ul>
+
+<div style="text-align:center">
+  <h2>Мы в телеграмме</h2> 
+</div>
+
+<div style="position:absolute; top: 200px; left: 1030px; font-size: 220%;">В нашем телеграмм канале вы сможете узнавать 
+  новости, вступать в движение, участвовать в 
+  голосованиях и узнавать для себя что-то новое. В нашем чате вы можете задать нам воспросы или всем,
+чтобы понять "Хоть кто-то знает?" Подписывайтесь на нас https://t.me/pp_project1 .</div>
+
+<div class="row">
+  <div class="column">
+    <img src="coment_pp_project.jpg" alt="Nature" style="position:absolute ; top:400; left:100;" width = "500px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+  <img src="pp_project.jpg" alt="Nature" style="position:absolute ;top:400; left: 500px;" width = "500px" onclick="myFunction(this);">
+ </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+  <img id="expandedImg" style="width:50%"> 
+
+</div>
+<button onclick="change_color()" class="button_for_change_color" style="position:absolute; top:20px; right:20px">сменить тему</button>
+
+
+<script>
+function myFunction(imgs) { 
+    var expandImg = document.getElementById("expandedImg");
+    <!--var imgText = document.getElementById("imgtext");
+    
+    expandImg.parentElement.style.display = "block";
+}
+function change_color() {
+          if (document.body.style.background == "black"){
+            document.body.style.background = "white"
+            document.body.style.color = "black"
+          }else{
+            document.body.style.background = "black"
+            document.body.style.color = "white"
+          }
+                
+      }
+</script>
+</body>
+</html>
