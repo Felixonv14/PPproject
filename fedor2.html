@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="height=device-height,width=600,user-scalable=yes">
+<style>
+     
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none; 
+  margin: 40px 0 5px; 
+  padding: 25px 0 5px; 
+  text-align: center; 
+  background: white; 
+}
+* {
+    box-sizing:border-box;
+   } 
+
+   .left {
+    background-color:#2196F3;
+    padding:20px;
+    float:left;
+    width:20%;
+   }
+
+   .main {
+    background-color:#f1f1f1;
+    padding:20px;
+    float:left;
+    width:60%; 
+   }
+
+ .right {
+    background-color:#4CAF50;
+    padding:20px;
+    float:left;
+    width:20%;
+   }
+
+  
+   @media screen and (max-width:800px) {
+    .left, .main, .right {
+     width:100%;
+   }
+  }
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block; 
+  vertical-align:top; 
+}
+.menu-main li:last-child:after {content: none;} 
+.menu-main a { 
+  text-decoration: none; 
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px; 
+  position: relative; 
+  padding-bottom: 20px; 
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s; 
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;} 
+
+
+.menu-main a:before,
+.menu-main a:after {
+  content: ""; 
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #86feae;
+  transition: .8s; 
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;} 
+
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;} 
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+.column img {
+    opacity: 1; 
+    cursor: pointer; 
+}
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+
+.container {
+
+    position: relative;
+    display: none;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color:red;
+    font-size: 35px;
+    cursor: pointer;
+}
+.button_for_change_color {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-color: aliceblue;
+  color: blue;
+  border: none;
+}
+</style>
+</head>
+<body>
+    <ul class="menu-main">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="fedor2.html">Проекты</a></li>
+      <li><a href="fedor3.html">Мы в телеграмме</a></li>
+      </ul>
+
+<div style="text-align:center">
+  <h2>Проекты</h2> 
+</div>
+
+<div style="position:absolute; left: 50px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#encrypt">telegramm bots</a></div>
+<div style="position:absolute; top: 216px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#encrypt">Бот шифратор</a></div>
+<div style="position:absolute; top: 252px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#official_PP">Офицальный бот</a></div>
+<div style="position:absolute; top: 288px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#School1576">Бот школы</a></div>
+<div style="position:absolute; top: 324px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#Sapphiro">Sapphiro</a></div>
+<div style="position:absolute; top: 360px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#yourpoems">Сайты</a></div>
+<div style="position:absolute; top: 396px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#yourpoems">Your poems</a></div>
+<div style="position:absolute; top: 432px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#sitepp">Сайт движения PP project</a></div>
+<div style="position:absolute; top: 468px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#grib">Грибоед</a></div>
+<div style="position:absolute; top: 504px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#sprav">Другие проекты</a></div>
+<div style="position:absolute; top: 540px; left:80px; font-size: 40px; font-style: arial; font-family: sans-serif"><a href="#sprav">Приложение справочник</a></div> 
+
+<div style="position: absolute; top: 670px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+<article id="encrypt">
+<h2>Бот шифратор</h2>
+</article>
+</div>
+
+<div  style="position:absolute; top: 1760px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://t.me/encrypt_pp_bot ">@encrypt_pp_bot</a></p>
+</div>
+
+<div style="position:absolute; top: 1840px; left: 50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  Бот шифратор— это бот при помощи которого можно шифровать
+  и расшифровывать сообщения, используется более сложная версия шифра Цезаря.
+</div>
+
+
+<div style="position: absolute; top: 2108px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="official_PP">
+  <h2>Офицальный бот</h2>
+  </article>
+</div>
+
+<div  style="position:absolute;top: 3286px; left: 50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://t.me/official_PP_project_bot">@offical_PP_project_bot</a></p>
+</div>
+
+<div style="position:absolute; top: 3360px; left: 50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  Официальный бот движения PP Project. В нём вы сможете узнать проекты этого движения не листая официальную группу.
+</div>
+
+ <div style="position: absolute; top: 3538px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="School1576">
+  <h2>Бот школы</h2>
+  </article>
+  </div>
+
+<div  style="position:absolute;top: 4746px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = " https://t.me/School1576_msk_bot">@School1576_msk_bot</a></p>
+</div>
+
+<div style="position:absolute; top: 4826px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="School1576">Бот школы. В этом боте вы можете узнать новости школы,социальные сети нашей школы, о самом боте и т. д.</article>
+</div>
+
+<div style="position: absolute; top: 5000px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="Sapphiro">
+  <h2>Sapphiro</h2>
+  </article>
+</div>
+
+<div  style="position:absolute;top: 6200px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://t.me/Sapphiro_bot">@Sapphiro_bot</a></p>
+</div>
+
+<div style="position:absolute; top: 6300px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="Sapphiro">Сапфиро имеет очень большой функционал. У него есть: ⛅ Модуль "Погода", ⚽ Модуль"Развлечения", 👋 Модуль"РП и Действия" и многое другое.</article>
+</div>
+
+
+
+<div style="position: absolute; top: 6572px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="yourpoems">
+  <h2>Your poems</h2>
+  </article>
+</div>
+
+<div  style="position:absolute;top: 7152px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "">Ссылки нет.Пока что в разработке.</a></p>
+</div>
+
+<div style="position:absolute; top: 7312px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="yourpoems">У нас новый проект - сайт социальная сеть для начинающих писателей. Тут они смогут делиться своими
+     работами и оценивать друг друга. Пока что он находится в разработке.</article>
+</div>
+
+<div style="position: absolute; top: 7580px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="sitepp">
+  <h2>Сайт движения PP project</h2>
+  </article>
+</div>
+
+<div  style="position:absolute;top: 8160px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://projectpp.ru">projectpp.ru</a></p>
+</div>
+
+<div style="position:absolute; top: 8240px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="sitepp">Это сайт, на котором вы сейчас находитесь.Спасибо, что посетили наш сайт.</article>
+</div>
+
+<div style="position: absolute; top: 8320px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="grib">
+  <h2>Грибоед</h2>
+  </article>
+</div>
+
+<div  style="position:absolute;top: 9340px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://griboed.site/">https://griboed.site/</a></p>
+</div>
+
+<div style="position:absolute; top: 9440px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="grib">Это проект, в котором вы сможете увидеть, сколько людей посетило той или иной лес, сможете видеть, какие грибы в каких лесах растут и на сколько хорош лес 🏞</article>
+</div>
+
+<div style="position: absolute; top: 9728px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="sprav">
+  <h2>Приложение справочник</h2>
+  </article>
+</div>
+
+<div  style="position:absolute; top: 10288px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://disk.yandex.ru/d/2AtAEZztHzJpGA">Скачать приложение</a></p>
+</div>
+
+<div style="position:absolute; top: 10388px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="sprav">Справочник по информатике даст вам возможность узнать основы интереснейшей науки - информатики.</article>
+</div>
+
+<div class="row">
+  <div class="column">
+    <img src="shifratorbot.jpg" alt="Nature" style="position:absolute ; top: 780px; left: 50px;" width = "500px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="offical_PP_bot.jpg" alt="Nature" style="position:absolute ;top: 2218px; left: 50px;" width = "500px" onclik="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="schoolbot.jpg" alt="Nature" style="position:absolute ; top: 3668px; left:50px;" width = "500px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="sapphiro.jpg" alt="Nature" style="position:absolute ; top: 5118px; left:50px;" width = "500px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="yourpoems.jpg" alt="Nature" style="position:absolute ; top: 6682px; left:50px;" width = "500px" onclick="myFunction(this);">
+  </div> 
+  <div class="column">
+    <img src="popon.png.jpg" alt="Nature" style="position:absolute ; top: 7690px; left:50px;" width = "500px" onclick="myFunction(this);">
+  </div> 
+  <div class="column">
+    <img src="griboed.jpg" alt="Nature" style="position:absolute ; top: 8430px; left:50px;" width = "500px" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="spravocnik.jpg" alt="Nature" style="position:absolute ; top: 9838px; left:50px;" width = "500px" onclick="myFunction(this);">
+  </div>
+</div>  
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">×</span>
+  <img id="expandedImg" style="width:50%"> 
+
+</div>
+<button onclick="change_color()" class="button_for_change_color" style="position:absolute; top:20px; right:20px">сменить тему</button>
+
+
+<script>
+function myFunction(imgs) { 
+    var expandImg = document.getElementById("expandedImg");
+    
+    expandImg.parentElement.style.display = "block";
+}
+function change_color() {
+          if (document.body.style.background == "black"){
+            document.body.style.background = "white"
+            document.body.style.color = "black"
+          }else{
+            document.body.style.background = "black"
+            document.body.style.color = "white"
+          }
+                
+      }
+</script>
+</body>
+</html>
