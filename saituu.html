@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="height=device-height,width=600,user-scalable=yes">
+<style>
+     
+    @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+.menu-main {
+  list-style: none; 
+  margin: 40px 0 5px; 
+  padding: 25px 0 5px; 
+  text-align: center; 
+  background: white; 
+}
+* {
+    box-sizing:border-box;
+   } 
+
+   .left {
+    background-color:#2196F3;
+    padding:20px;
+    float:left;
+    width:20%;
+   }
+
+   .main {
+    background-color:#f1f1f1;
+    padding:20px;
+    float:left;
+    width:60%; 
+   }
+
+ .right {
+    background-color:#4CAF50;
+    padding:20px;
+    float:left;
+    width:20%;
+   }
+
+  
+   @media screen and (max-width:800px) {
+    .left, .main, .right {
+     width:100%;
+   }
+  }
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block; 
+  vertical-align:top; 
+}
+.menu-main li:last-child:after {content: none;} 
+.menu-main a { 
+  text-decoration: none; 
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px; 
+  position: relative; 
+  padding-bottom: 20px; 
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s; 
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;} 
+
+
+.menu-main a:before,
+.menu-main a:after {
+  content: ""; 
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #86feae;
+  transition: .8s; 
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;} 
+
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;} 
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+
+.column img {
+    opacity: 1; 
+    cursor: pointer; 
+}
+.column img:hover {
+    opacity: 1;
+}
+
+.row:after {
+    content: "";
+    display: table; 
+    clear: both;
+}
+
+
+.container {
+
+    position: relative;
+    display: none;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color:red;
+    font-size: 35px;
+    cursor: pointer;
+}
+.button_for_change_color {
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 550;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-color: aliceblue;
+  color: blue;
+  border: none;
+}
+</style>
+</head>
+<body>
+    <ul class="menu-main">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="pp_project2.html">Проекты</a></li>
+      <li><a href="pp_project3.html">Мы в телеграмме</a></li>
+      </ul>
+
+    
+
+ <div style="text-align:center">
+  <h2>Сайты</h2> 
+</div>
+
+<div style="position: absolute; top: 150px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="yourpoems">
+  <h2>Your poems</h2>
+  </article>
+</div>
+
+<div class="row">
+  <div class="column">
+    <a href = "">
+    <img src="yourpoems.jpg" alt="Nature" style="position:absolute ; top: 320px; left:50px;" width = "500px" onclick="myFunction(this);"></a>
+  </div> 
+</div> 
+
+<div  style="position:absolute;top: 850px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "">Ссылки нет.Пока что в разработке.</a></p>
+</div>
+
+<div style="position:absolute; top: 1050px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="yourpoems">У нас новый проект - сайт социальная сеть для начинающих писателей. Тут они смогут делиться своими
+     работами и оценивать друг друга. Пока что он находится в разработке.</article>
+</div>
+
+<div style="position: absolute; top: 1400px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="sitepp">
+  <h2>Сайт движения PP project</h2>
+  </article>
+</div>
+
+<div class="row">
+  <div class="column">
+    <a href = "https://projectpp.ru">
+    <img src="popon.png.jpg" alt="Nature" style="position:absolute ; top: 1620px; left:50px;" width = "500px" onclick="myFunction(this);"></a>
+  </div> 
+</div> 
+
+<div  style="position:absolute;top: 2100px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://projectpp.ru">projectpp.ru</a></p>
+</div>
+
+<div style="position:absolute; top: 2220px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="sitepp">Это сайт, на котором вы сейчас находитесь.Спасибо, что посетили наш сайт.</article>
+</div>
+
+<div style="position: absolute; top: 2320px; left:50px;  font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="grib">
+  <h2>Грибоед</h2>
+  </article>
+</div>
+
+<div class="row">
+  <div class="column">
+    <a href = "https://griboed.site/">
+    <img src="griboed.jpg" alt="Nature" style="position:absolute ; top: 2500px; left:50px;" width = "500px" onclick="myFunction(this);"></a>
+  </div> 
+</div> 
+
+<div  style="position:absolute;top: 3400px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <p><a href = "https://griboed.site/">https://griboed.site/</a></p>
+</div>
+
+<div style="position:absolute; top: 3520px; left:50px; font-size: 40px; font-style: arial; font-family: sans-serif">
+  <article id="grib">Это проект, в котором вы сможете увидеть, сколько людей посетило той или иной лес, сможете видеть, какие грибы в каких лесах растут и на сколько хорош лес 🏞</article>
+</div>
+
+</div> 
+<button onclick="goBack()" class="button_for_change_color" style="position:absolute; top:130px; left:20px">Назад</button>
+
+<button onclick="change_color()" class="button_for_change_color" style="position:absolute; top:20px; right:20px">сменить тему</button>
+
+
+<script>
+  function goBack(){
+      window.history.back();
+    }
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      //var imgText = document.getElementById("imgtext");
+
+      expandImg.parentElement.style.display = "block";
+    }
+    let lsKey = 'theme-type'
+    let themeType = localStorage.getItem(lsKey)
+    if (!themeType) {
+      localStorage.setItem(lsKey, 'white')
+    }
+    else {
+      change_color(themeType)
+    }
+    function change_color(themeType = null) {
+      if ((themeType && themeType == 'white')
+        || document.body.style.background == "black") {
+        document.body.style.background = "white"
+        document.body.style.color = "black"
+        localStorage.setItem(lsKey, 'white')
+      } 
+      else {
+        document.body.style.background = "black"
+        document.body.style.color = "white"
+        localStorage.setItem(lsKey, 'black')
+      }
+    }
+</script>
+</body>
+</html>
